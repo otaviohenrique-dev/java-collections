@@ -20,26 +20,24 @@ public class ExemploArrayDeque {
         ad.add("Black");
 
         Deque<String> d = new ArrayDeque<String>();
+        d.add("Pink");
         d.add("Green");
+        d.add("Purple");
         d.add("Orange");
+        d.add("Brown");
 
         ad.addAll(d);
+        System.out.println("Elements in the ArrayDeque: "+ad);
 
-        System.out.println(ad);
-        System.out.println(ad.contains("White"));
-        System.out.println(d.contains("Brown"));
-        System.out.println(d.containsAll(d));
+        String val = ad.remove();
+        ad.remove("Black");
 
-        System.out.println("Output of element: "+ad.element());
-        System.out.println("Get first using getFirst: "+ad.getFirst());
-        System.out.println("Get last element using getLast: "+ad.getLast());
-        System.out.println("Output of peek: "+ad.peek());
-        System.out.println("Get first element using peekFirst: "+ad.peekFirst());
-        System.out.println("Get last element using peekLast: "+ad.peekLast());
-        System.out.println();
+
+       /*A terminar */
     }
 
     private static void removendoDaFila() {
+        System.out.println("*** REMOVENDO ***");
     }
 
     private static void inserindoNaFila() {
