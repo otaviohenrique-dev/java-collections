@@ -7,10 +7,10 @@ package list;
 public class ArrayListAluno {
     private String nome;
     private String curso;
-    private Double nota;
+    private double nota;
     private String sala;
 
-    public ArrayListAluno(String nome, String curso, Double nota){
+    public ArrayListAluno(String nome, String curso, double nota){
         this.nome = nome;
         this.curso = curso;
         this.nota = nota;
@@ -51,5 +51,11 @@ public class ArrayListAluno {
 
     public void setSala(String sala) {
         this.sala = sala;
+    }
+
+    // Método para retornar a clase em String
+    @Override
+    public String toString(){
+        return this.nome;
     }
 }
