@@ -27,6 +27,7 @@ public class ArrayListExemplo {
         lista.add(a);
         lista.add(b);
         lista.add(c);
+        Collections.sort(lista);
         System.out.println(lista);
     }
 

@@ -4,7 +4,7 @@ package list;
  * @author Lorenzo Henrique de Souza
  * **/
 
-public class ArrayListAluno {
+public class ArrayListAluno implements Comparable<ArrayListAluno> {
     private String nome;
     private String curso;
     private double nota;
@@ -57,5 +57,10 @@ public class ArrayListAluno {
     @Override
     public String toString(){
         return this.nome;
+    }
+
+    @Override
+    public int compareTo(ArrayListAluno o) {
+        return this.nome.compareTo(o.getNome());
     }
 }
