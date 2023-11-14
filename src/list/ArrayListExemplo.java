@@ -23,8 +23,18 @@ public class ArrayListExemplo {
     }
 
     private static void exemploLinkedList() {
-
-
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        System.out.println(list);
+        list.remove(0);
+        System.out.println(list);
+        if(list.contains(1)){
+            System.out.println("Contém");
+        }else {
+            System.out.println("Não Contém");
+        }
 
     }
 
